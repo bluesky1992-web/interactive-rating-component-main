@@ -1,0 +1,56 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: #7c8798;
+  --DarkBlue: #252d37;
+  --VeryDarkBlue: #121417;
+  --primary-orange: #fb7413;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: "Overpass", sans-serif;
+}
+h2 {
+  color: var(--white);
+  align-self: flex-start;
+  margin-left: -22px;
+}
+p {
+  color: var(--LightGrey);
+  font-size: 15px;
+  margin-top: -10px;
+  width: 350px;
+  
+}
+.container {
+  width: 350px;
+  height: 300px;
+  background: rgb(37, 45, 55);
+  background: linear-gradient(
+    193deg,
+    rgba(37, 45, 55, 0.9702052696078431) 100%,
+    rgba(18, 20, 23, 1) 100%
+    
+  );
+padding: 20px;
+  margin: 10% auto;
+  border-radius: 22px;
+}
+img {
+  margin-left: 5px;
+  padding: 13px;
+  border-radius: 50%;
+  width: 16px;
+  background-color: var(--MediumGrey);
+}
+
+.main-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
