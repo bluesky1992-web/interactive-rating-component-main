@@ -1,7 +1,7 @@
 :root {
   --white: hsl(0, 0%, 100%);
   --LightGrey: hsl(217, 12%, 63%);
-  --MediumGrey: #7c8798;
+  
   --DarkBlue: #252d37;
   --VeryDarkBlue: #121417;
   --primary-orange: #fb7413;
@@ -23,7 +23,6 @@ p {
   font-size: 15px;
   margin-top: -10px;
   width: 350px;
-  
 }
 .container {
   width: 350px;
@@ -33,9 +32,8 @@ p {
     193deg,
     rgba(37, 45, 55, 0.9702052696078431) 100%,
     rgba(18, 20, 23, 1) 100%
-    
   );
-padding: 20px;
+  padding: 20px;
   margin: 10% auto;
   border-radius: 22px;
 }
@@ -44,7 +42,7 @@ img {
   padding: 13px;
   border-radius: 50%;
   width: 16px;
-  background-color: var(--MediumGrey);
+  background-color: rgb(57, 63, 76);
 }
 
 .main-center {
@@ -53,4 +51,44 @@ img {
   justify-content: center;
   align-items: center;
   padding: 25px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  color: var(--LightGrey);
+  padding: 0;
+  margin: 0 0.5em;
+  background-color: rgb(57, 63, 76);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+label:hover {
+  background-color: var(--LightGrey);
+  color: var(--white);
+}
+label:focus {
+  background-color: var(--primary-orange);
+}
+
+input[type="radio"]:checked + label {
+  color: gold;
 }
