@@ -17,14 +17,17 @@ h2 {
   color: var(--white);
   align-self: flex-start;
   margin-left: -22px;
+  font-weight: 700;
 }
 p {
   color: var(--LightGrey);
   font-size: 15px;
   margin-top: -10px;
   width: 350px;
+  font-weight: 400;
 }
 .container {
+  
   width: 350px;
   height: 330px;
   background: rgb(37, 45, 55);
@@ -37,7 +40,7 @@ p {
   margin: 10% auto;
   border-radius: 22px;
 }
- img {
+ .container > img {
   margin-left: 5px;
   padding: 13px;
   border-radius: 50%;
@@ -108,3 +111,57 @@ button:active {
   color:var(--primary-orange);
   
 }
+.modal {
+  position: absolute;
+  top: 0.5%;
+  left: 477px;
+  width: 350px;
+  height: 330px;
+  background: rgb(37, 45, 55);
+  background: linear-gradient(
+    193deg,
+    rgba(37, 45, 55, 0.9702052696078431) ,
+    rgba(18, 20, 23, 1) 
+  );
+  padding: 20px;
+  margin: 10% auto;
+  border-radius: 22px;
+  visibility: visible;
+}
+.open-modal-content {
+  visibility: visible;
+}
+
+.modal-content {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ margin-left: -30px;
+ padding-top: 10px;
+}
+.modal-content h3 {
+  font-size: 15px;
+  color: var(--primary-orange);
+  opacity: 0.7;
+  background-color: var(--DarkBlue);
+  padding: 5px 18px ;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+.modal-content h1 {
+  color: var(--white);
+  text-align: center;
+
+}
+.modal-content p {
+  color: var(--LightGrey);
+  text-align: center;
+  /* padding-left: 30px; */
+  font-size: 15px;
+  font-weight: 400;
+  width: 340px;
+  
+  line-height: 1.5;
+}
+

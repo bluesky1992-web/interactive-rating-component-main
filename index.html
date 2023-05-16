@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -18,30 +21,53 @@
   </head>
   <body>
     <main class="container">
-     
-
-      
       <img src="./images/icon-star.svg" alt="icon-star" />
       <div class="main-center">
-      <h2>How Did We do?</h2>
-      <p>
-        Please let us know how we did with your support request. All feedback is
-        appreciated to help us improve our offerring!
-      </p>
-      <div class="rating-container">
-        <input type="radio" id="rating1" name="rating" value="1"/><label for="rating1">1 </label>
-        <input type="radio" id="rating2" name="rating" value="2"/><label for="rating2">2</label>
-        <input type="radio" id="rating3" name="rating" value="3"/><label for="rating3">3</label>
-        <input type="radio" id="rating4" name="rating" value="4"/><label for="rating4">4</label>
-        <input type="radio" id="rating5" name="rating" value="5"/><label for="rating5">5</label>
-      </div>
+        <h2>How Did We do?</h2>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offerring!
+        </p>
+        <div class="rating-container">
+          <input type="radio" id="rating1" name="rating" value="1" /><label
+            for="rating1"
+            >1
+          </label>
+          <input type="radio" id="rating2" name="rating" value="2" /><label
+            for="rating2"
+            >2</label
+          >
+          <input type="radio" id="rating3" name="rating" value="3" /><label
+            for="rating3"
+            >3</label
+          >
+          <input type="radio" id="rating4" name="rating" value="4" /><label
+            for="rating4"
+            >4</label
+          >
+          <input type="radio" id="rating5" name="rating" value="5" /><label
+            for="rating5"
+            >5</label
+          >
+        </div>
         <button id="submit">SUBMIT</button>
       </div>
-
+      <div class="modal">
+        <div class="modal-content">
+          <img
+            src="./images/illustration-thank-you.svg"
+            alt="Thank you image"
+          />
+          <h3>You selected 4 out of 5</h3>
+          <h1>Thank you!</h1>
+          <p>
+            We appreciate you taking the time to give a rating. if you ever need
+            more support, don't hesitate to get in touch!
+          </p>
+        </div>
+      </div>
     </main>
-     <div class="modal-content">
-        <span style="color:white">Hello world</span>
-     </div>
+
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
