@@ -1,17 +1,27 @@
 :root {
   --white: hsl(0, 0%, 100%);
   --LightGrey: hsl(217, 12%, 63%);
-  
+
   --DarkBlue: #252d37;
   --VeryDarkBlue: #121417;
   --primary-orange: #fb7413;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7% auto;
+}
+
 body {
+ 
   margin: 0;
   padding: 0;
   background-color: black;
-  font-family: "Overpass", sans-serif;
+  font-family: 'Overpass', sans-serif;
+  width: 100%;
+  height: 100vh;
 }
 h2 {
   color: var(--white);
@@ -37,10 +47,10 @@ p {
     rgba(18, 20, 23, 1) 100%
   );
   padding: 20px;
-  margin: 10% auto;
+  margin-left: 30% ;
   border-radius: 22px;
 }
- .container > img {
+.container > img {
   margin-left: 5px;
   padding: 13px;
   border-radius: 50%;
@@ -66,7 +76,7 @@ p {
   margin-bottom: 20px;
 }
 
-input[type="radio"] {
+input[type='radio'] {
   display: none;
 }
 
@@ -90,8 +100,7 @@ label:hover {
   color: var(--white);
 }
 
-
-input[type="radio"]:checked + label {
+input[type='radio']:checked + label {
   background-color: var(--primary-orange);
   color: var(--white);
 }
@@ -103,65 +112,71 @@ button {
   color: var(--white);
   background-color: var(--primary-orange);
   border: none;
-  cursor:pointer;
+  cursor: pointer;
   margin-top: 10px;
 }
 button:active {
   background-color: var(--white);
-  color:var(--primary-orange);
-  
+  color: var(--primary-orange);
 }
 .modal {
-  position: absolute;
-  top: 0.5%;
-  left: 477px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
   width: 350px;
   height: 330px;
   background: rgb(37, 45, 55);
   background: linear-gradient(
     193deg,
-    rgba(37, 45, 55, 0.9702052696078431) ,
-    rgba(18, 20, 23, 1) 
+    rgba(37, 45, 55, 0.9702052696078431),
+    rgba(18, 20, 23, 1)
   );
   padding: 20px;
-  margin: 10% auto;
+  /* margin: 10% auto; */
   border-radius: 22px;
   visibility: visible;
 }
-.open-modal-content {
-  visibility: visible;
-}
+
 
 .modal-content {
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- margin-left: -30px;
- padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: -30px;
+  padding-top: 10px;
 }
 .modal-content h3 {
   font-size: 15px;
   color: var(--primary-orange);
   opacity: 0.7;
   background-color: var(--DarkBlue);
-  padding: 5px 18px ;
+  padding: 5px 18px;
   border-radius: 15px;
   margin-top: 30px;
 }
 .modal-content h1 {
   color: var(--white);
   text-align: center;
-
 }
 .modal-content p {
   color: var(--LightGrey);
   text-align: center;
-  /* padding-left: 30px; */
+  padding-left: 30px;
   font-size: 15px;
   font-weight: 400;
   width: 340px;
-  
   line-height: 1.5;
 }
 
+.attribution {
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.attribution a {
+  color:var(--primary-orange);
+}
