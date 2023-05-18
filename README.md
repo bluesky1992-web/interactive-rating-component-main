@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [ solution repo](https://github.com/bluesky1992-web/interactive-rating-component-main)
+- Live Site URL: [ live site ](https://bluesky1992-web.github.io/interactive-rating-component-main/)
 
 ## My process
 
